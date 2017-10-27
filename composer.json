@@ -1,0 +1,17 @@
+{
+	"name": "schlessera/wp-cli-psysh",
+	"description": "Replace WP-CLI shell standard REPL with PsySH.",
+	"type": "wp-cli-package",
+	"homepage": "http://psysh.org/",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Alain Schlesser",
+			"email": "alain.schlesser@gmail.com",
+			"homepage": "https://www.alainschlesser.com"
+		}
+	],
+	"require": {
+		"psy/psysh": "~0.8"
+	}
+}
