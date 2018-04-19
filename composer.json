@@ -12,6 +12,6 @@
 		}
 	],
 	"require": {
-		"psy/psysh": "~0.8"
+		"psy/psysh": "@stable"
 	}
 }
