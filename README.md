@@ -5,7 +5,7 @@ Replace WP-CLI shell standard REPL with PsySH.
 
 
 
-Quick links: [Using](#using) | [Installing](#installing) | [Contributing](#contributing) | [Support](#support)
+Quick links: [Using](#using) | [Installing](#installing) | [Contributing](#contributing) | [Support](#support) | [How it Works](#how-it-works)
 
 ## Using
 
@@ -47,3 +47,7 @@ Github issues aren't for general support questions, but there are other venues y
 
 
 *This README.md is generated dynamically from the project's codebase using `wp scaffold package-readme` ([doc](https://github.com/wp-cli/scaffold-package-command#wp-scaffold-package-readme)). To suggest changes, please submit a pull request against the corresponding part of the codebase.*
+
+## How it Works
+
+This package doesn't execute any PHP code, it simply [installs PsySh via Composer](https://github.com/schlessera/wp-cli-psysh/blob/83970ee52e6a0c3b2fac8b8165e23ce44a0f5a55/composer.json#L14-L15). The upstream `wp shell` command [looks for alternative shells](https://github.com/wp-cli/shell-command/blob/117147974eec7ad7eb43f3bf5006a48c79b2cd2e/src/Shell_Command.php#L47-L49) and loads one automatically if it exists.
